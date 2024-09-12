@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket Machine Quote Request</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
+</head>
+<body>
+
+<div class="container">
+    <h1>Quote Request</h1>
+    <form action="ServletQuote" method="POST" class="formMain">
+        <div class="formGroup">
+            <label for="socketType">Socket Type:</label>
+            <select name="socketType" id="socketType" required>
+                <option value="A">Type A</option>
+                <option value="B">Type B</option>
+                <option value="C">Type C</option>
+            </select>
+        </div>
+
+        <div class="formGroup">
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" min="1" required>
+        </div>
+
+        <div class="formGroup">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+
+        <div class="formGroup">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <button type="submit" class="submit-btn">Quote</button>
+    </form>
+</div>
+
+</body>
+</html>
